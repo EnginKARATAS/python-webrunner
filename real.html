@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var n = prompt('IdealCPI(n)')
+        var f2 = prompt('(Load ve store komutları yürütülen tüm komutların % kaçını oluşturuyor?')
+        var k2 = prompt('loadstordan toplam kaç cycle var?')
+        var k1 = prompt('diğer tüm işlemlerden kaç cycle var')
+        f2 *= 0.01;
+        var f1 = 1-f2;
+        var w = prompt('Bekleme çevrimi(w)')
+        console.log(" f2 "+f2+" k2 "+k2+" k1 "+k1+" f1 "+f1+" n "+n+" w "+w+" ");
+        const k = ((f1*k1)+(f2*k2))
+        const nson = Number(n);
+        const wson = Number(w)
+        const sonuc = nson+k*w;
+        console.log(sonuc);
+      
+    </script>
+    
+</body>
+</html>
